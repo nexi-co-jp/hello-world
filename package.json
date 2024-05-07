@@ -1,0 +1,28 @@
+{
+  "name": "hello-world",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/hello-world.umd.cjs",
+  "module": "./dist/hello-world.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hello-world.js",
+      "require": "./dist/hello-world.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0"
+  }
+}
